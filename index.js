@@ -173,7 +173,10 @@ export default class Barcode extends PureComponent {
     return (
       <View style={[styles.svgContainer, backgroundStyle]}>
         <Svg height={this.props.height} width={this.state.barCodeWidth}>
-          <Path d={this.state.bars} fill={this.props.lineColor} />
+          {this.state.bars.map(bar => (
+            <Path d={bar} fill={this.props.lineColor} />
+          ))
+          }
         </Svg>
         { typeof (this.props.text) !== 'undefined' &&
           <Text style={{color: this.props.textColor, width: this.state.barCodeWidth, textAlign: 'center'}} >{this.props.text}</Text>
