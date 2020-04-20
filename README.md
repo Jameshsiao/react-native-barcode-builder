@@ -6,7 +6,7 @@ React Native component to generate barcodes. Uses [JsBarcode](https://github.com
 
 ### Step 1
 
-This library uses [@react-native-community/art](https://github.com/react-native-community/art) to draw vector graphics.
+This library uses [~~@react-native-community/art~~] [react-native-svg](https://github.com/react-native-community/react-native-svg) to draw vector graphics.
 
 ### Step 2
 
